@@ -4,11 +4,15 @@ import Canvas from '../components/Canvas.vue'
 import Footer from '../components/Footer.vue'
 import Header from '../components/Header.vue'
 import OptionAside from '../components/OptionAside.vue'
+import Main from '../components/Main.vue'
+import { useUserData } from '../store/index'
+import { ref } from 'vue'
 
 </script>
+
 <template>
-  <div class="common-layout">
-    <el-container>
+  <div class="common-layout" style="width: 100%; height: 100vh; background-color: #e6e6e6;">
+    <!-- <el-container>
       <el-header>
         <Header></Header>
       </el-header>
@@ -26,8 +30,8 @@ import OptionAside from '../components/OptionAside.vue'
       <el-footer>
           <Footer></Footer>
       </el-footer>
-    </el-container>
-    <!-- <el-backtop :right="100" :bottom="100" /> -->
+    </el-container> -->
+    <Main></Main>
   </div>
 </template>
   
